@@ -6,9 +6,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-function head (assertEqual) {
-  return assertEqual[0]
-}
+let head = function(assertEqual) {
+  return assertEqual[0];
+};
 
 assertEqual(head([5,6,7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
